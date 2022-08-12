@@ -6,14 +6,17 @@ export const sayac = createSlice({
   name: "sayac",
   initialState,
   reducers: {
-    increment: (state) => {
-      state.value += 1;
+    increment: (state, action) => {
+      action.payload = 1;
+      state.value += action.payload;
     },
-    decrement: (state) => {
-      state.value -= 1;
+    decrement: (state, action) => {
+      action.payload = 1;
+      state.value -= action.payload;
     },
-    incrementByTwo: (state) => {
-      state.value += 2;
+    incrementByTwo: (state, action) => {
+      action.payload = 2;
+      state.value += action.payload;
     },
   },
 });

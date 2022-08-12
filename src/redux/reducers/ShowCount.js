@@ -7,9 +7,24 @@ export function ShowCount() {
   return (
     <div>
       <h1>{count}</h1>
-      <button  aria-label="Increment value" onClick={(event,value) => dispatch(increment(), 1)}>increment</button>
-      <button aria-label="Decrement value"onClick={(event,value) => dispatch(decrement(), 1)}>decrement</button>
-      <button aria-label="IncrementByTwo value"onClick={(event,value) => dispatch(incrementByTwo())}>incrementByTwo</button>
+      <button
+        aria-label="Increment value"
+        onClick={(event, value) => dispatch(increment())}
+      >
+        increment
+      </button>
+      <button
+        aria-label="Decrement value"
+        onClick={(event, value) => dispatch(decrement())}
+      >
+        decrement
+      </button>
+      <button
+        aria-label="IncrementByTwo value"
+        onClick={(event, value) => dispatch(incrementByTwo())}
+      >
+        incrementByTwo
+      </button>
     </div>
   );
 }
